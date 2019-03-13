@@ -23,4 +23,8 @@ class Scraper
     end
 
   end
+
+
+  def self.scrape_more_details(game)
+  end
 end
