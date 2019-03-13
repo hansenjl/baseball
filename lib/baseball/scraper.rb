@@ -21,6 +21,13 @@ class Scraper
         game_object.result = game.css("div.game-result").text
         game_object.url = "http://www.espn.com" + game.css("a")[0]['href'] if game.css("a")[0]['href']
     end
+  end
+
+
+  def self.scrape_game_details(game_object)
+     website = Nokogiri::HTML(open(game_object.url))
+
+
 
   end
 end
